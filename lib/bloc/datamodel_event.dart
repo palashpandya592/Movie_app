@@ -1,11 +1,8 @@
 part of 'datamodel_bloc.dart';
 
 @immutable
-abstract class DatamodelEvent extends Equatable {
+abstract class DatamodelEvent {
   const DatamodelEvent();
-
-  @override
-  List<Object> get props => [];
 }
 
 class LoadDatamodelEvent extends DatamodelEvent {}
