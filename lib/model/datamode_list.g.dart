@@ -38,12 +38,13 @@ _$_Movies _$$_MoviesFromJson(Map<String, dynamic> json) => _$_Movies(
       name: json['name'] as String?,
       year: json['year'] as String?,
       director: json['director'] as String?,
-      mainStar: json['main_Star'] as String?,
+      mainStar: json['main_star'] as String?,
       description: json['description'] as String?,
       favoritedByUsers: json['favoritedByUsers'] as int?,
       genres:
           (json['genres'] as List<dynamic>?)?.map((e) => e as String).toList(),
-      thumbnail: json['thumbnail'] as String?,
+      thumbnail:
+          (json['thumbnail'] as String?)?.replaceAll("thumb/", "medium/"),
     );
 
 Map<String, dynamic> _$$_MoviesToJson(_$_Movies instance) => <String, dynamic>{
@@ -51,7 +52,7 @@ Map<String, dynamic> _$$_MoviesToJson(_$_Movies instance) => <String, dynamic>{
       'name': instance.name,
       'year': instance.year,
       'director': instance.director,
-      'main_Star': instance.mainStar,
+      'mainStar': instance.mainStar,
       'description': instance.description,
       'favoritedByUsers': instance.favoritedByUsers,
       'genres': instance.genres,
