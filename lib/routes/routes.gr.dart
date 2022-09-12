@@ -19,13 +19,16 @@ class _$AppRoute extends RootStackRouter {
   final Map<String, PageFactory> pagesMap = {
     MovieListRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
-          routeData: routeData, child: const MovieListPage());
+        routeData: routeData,
+        child: const MovieListPage(),
+      );
     },
     Detail_Route.name: (routeData) {
       final args = routeData.argsAs<Detail_RouteArgs>();
       return MaterialPageX<dynamic>(
-          routeData: routeData,
-          child: Detail_Page(key: args.key, movies: args.movies));
+        routeData: routeData,
+        child: Detail_Page(key: args.key, movies: args.movies),
+      );
     },
   };
 
@@ -48,9 +51,11 @@ class MovieListRoute extends PageRouteInfo<void> {
 /// [Detail_Page]
 class Detail_Route extends PageRouteInfo<Detail_RouteArgs> {
   Detail_Route({Key? key, required Movies movies})
-      : super(Detail_Route.name,
-            path: '/detail_-page',
-            args: Detail_RouteArgs(key: key, movies: movies));
+      : super(
+          Detail_Route.name,
+          path: '/detail_-page',
+          args: Detail_RouteArgs(key: key, movies: movies),
+        );
 
   static const String name = 'Detail_Route';
 }

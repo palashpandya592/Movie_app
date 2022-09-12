@@ -1,3 +1,4 @@
 class AppString {
-  static const name = "";
+  static const name = "Movies";
+  static const detail = "Details";
 }

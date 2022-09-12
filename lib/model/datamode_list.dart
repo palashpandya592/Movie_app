@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'datamode_list.freezed.dart';
-part 'datamode_list.g.dart';
+part '../generated/model/datamode_list.freezed.dart';
+part '../generated/model/datamode_list.g.dart';
 
 @freezed
 class MovieListData with _$MovieListData {

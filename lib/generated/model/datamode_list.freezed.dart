@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'datamode_list.dart';
+part of '../../model/datamode_list.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -12,7 +12,8 @@ part of 'datamode_list.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods',
+);
 
 MovieListData _$MovieListDataFromJson(Map<String, dynamic> json) {
   return _MovieListData.fromJson(json);
@@ -33,8 +34,9 @@ mixin _$MovieListData {
 /// @nodoc
 abstract class $MovieListDataCopyWith<$Res> {
   factory $MovieListDataCopyWith(
-          MovieListData value, $Res Function(MovieListData) then) =
-      _$MovieListDataCopyWithImpl<$Res>;
+    MovieListData value,
+    $Res Function(MovieListData) then,
+  ) = _$MovieListDataCopyWithImpl<$Res>;
   $Res call({int? statusCode, String? message, MovieList? data});
 
   $MovieListCopyWith<$Res>? get data;
@@ -87,8 +89,9 @@ class _$MovieListDataCopyWithImpl<$Res>
 abstract class _$$_MovieListDataCopyWith<$Res>
     implements $MovieListDataCopyWith<$Res> {
   factory _$$_MovieListDataCopyWith(
-          _$_MovieListData value, $Res Function(_$_MovieListData) then) =
-      __$$_MovieListDataCopyWithImpl<$Res>;
+    _$_MovieListData value,
+    $Res Function(_$_MovieListData) then,
+  ) = __$$_MovieListDataCopyWithImpl<$Res>;
   @override
   $Res call({int? statusCode, String? message, MovieList? data});
 
@@ -101,8 +104,9 @@ class __$$_MovieListDataCopyWithImpl<$Res>
     extends _$MovieListDataCopyWithImpl<$Res>
     implements _$$_MovieListDataCopyWith<$Res> {
   __$$_MovieListDataCopyWithImpl(
-      _$_MovieListData _value, $Res Function(_$_MovieListData) _then)
-      : super(_value, (v) => _then(v as _$_MovieListData));
+    _$_MovieListData _value,
+    $Res Function(_$_MovieListData) _then,
+  ) : super(_value, (v) => _then(v as _$_MovieListData));
 
   @override
   _$_MovieListData get _value => super._value as _$_MovieListData;
@@ -164,10 +168,11 @@ class _$_MovieListData implements _MovieListData {
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(statusCode),
-      const DeepCollectionEquality().hash(message),
-      const DeepCollectionEquality().hash(data));
+        runtimeType,
+        const DeepCollectionEquality().hash(statusCode),
+        const DeepCollectionEquality().hash(message),
+        const DeepCollectionEquality().hash(data),
+      );
 
   @JsonKey(ignore: true)
   @override
@@ -183,10 +188,11 @@ class _$_MovieListData implements _MovieListData {
 }
 
 abstract class _MovieListData implements MovieListData {
-  factory _MovieListData(
-      {final int? statusCode,
-      final String? message,
-      final MovieList? data}) = _$_MovieListData;
+  factory _MovieListData({
+    final int? statusCode,
+    final String? message,
+    final MovieList? data,
+  }) = _$_MovieListData;
 
   factory _MovieListData.fromJson(Map<String, dynamic> json) =
       _$_MovieListData.fromJson;
@@ -248,8 +254,9 @@ class _$MovieListCopyWithImpl<$Res> implements $MovieListCopyWith<$Res> {
 /// @nodoc
 abstract class _$$_MovieListCopyWith<$Res> implements $MovieListCopyWith<$Res> {
   factory _$$_MovieListCopyWith(
-          _$_MovieList value, $Res Function(_$_MovieList) then) =
-      __$$_MovieListCopyWithImpl<$Res>;
+    _$_MovieList value,
+    $Res Function(_$_MovieList) then,
+  ) = __$$_MovieListCopyWithImpl<$Res>;
   @override
   $Res call({List<Movies>? movies});
 }
@@ -258,8 +265,9 @@ abstract class _$$_MovieListCopyWith<$Res> implements $MovieListCopyWith<$Res> {
 class __$$_MovieListCopyWithImpl<$Res> extends _$MovieListCopyWithImpl<$Res>
     implements _$$_MovieListCopyWith<$Res> {
   __$$_MovieListCopyWithImpl(
-      _$_MovieList _value, $Res Function(_$_MovieList) _then)
-      : super(_value, (v) => _then(v as _$_MovieList));
+    _$_MovieList _value,
+    $Res Function(_$_MovieList) _then,
+  ) : super(_value, (v) => _then(v as _$_MovieList));
 
   @override
   _$_MovieList get _value => super._value as _$_MovieList;
@@ -364,16 +372,17 @@ mixin _$Movies {
 abstract class $MoviesCopyWith<$Res> {
   factory $MoviesCopyWith(Movies value, $Res Function(Movies) then) =
       _$MoviesCopyWithImpl<$Res>;
-  $Res call(
-      {int? id,
-      String? name,
-      String? year,
-      String? director,
-      String? mainStar,
-      String? description,
-      int? favoritedByUsers,
-      List<String>? genres,
-      String? thumbnail});
+  $Res call({
+    int? id,
+    String? name,
+    String? year,
+    String? director,
+    String? mainStar,
+    String? description,
+    int? favoritedByUsers,
+    List<String>? genres,
+    String? thumbnail,
+  });
 }
 
 /// @nodoc
@@ -442,16 +451,17 @@ abstract class _$$_MoviesCopyWith<$Res> implements $MoviesCopyWith<$Res> {
   factory _$$_MoviesCopyWith(_$_Movies value, $Res Function(_$_Movies) then) =
       __$$_MoviesCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {int? id,
-      String? name,
-      String? year,
-      String? director,
-      String? mainStar,
-      String? description,
-      int? favoritedByUsers,
-      List<String>? genres,
-      String? thumbnail});
+  $Res call({
+    int? id,
+    String? name,
+    String? year,
+    String? director,
+    String? mainStar,
+    String? description,
+    int? favoritedByUsers,
+    List<String>? genres,
+    String? thumbnail,
+  });
 }
 
 /// @nodoc
@@ -519,17 +529,17 @@ class __$$_MoviesCopyWithImpl<$Res> extends _$MoviesCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_Movies implements _Movies {
-  _$_Movies(
-      {this.id,
-      this.name,
-      this.year,
-      this.director,
-      this.mainStar,
-      this.description,
-      this.favoritedByUsers,
-      final List<String>? genres,
-      this.thumbnail})
-      : _genres = genres;
+  _$_Movies({
+    this.id,
+    this.name,
+    this.year,
+    this.director,
+    this.mainStar,
+    this.description,
+    this.favoritedByUsers,
+    final List<String>? genres,
+    this.thumbnail,
+  }) : _genres = genres;
 
   factory _$_Movies.fromJson(Map<String, dynamic> json) =>
       _$$_MoviesFromJson(json);
@@ -586,16 +596,17 @@ class _$_Movies implements _Movies {
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(year),
-      const DeepCollectionEquality().hash(director),
-      const DeepCollectionEquality().hash(mainStar),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(favoritedByUsers),
-      const DeepCollectionEquality().hash(_genres),
-      const DeepCollectionEquality().hash(thumbnail));
+        runtimeType,
+        const DeepCollectionEquality().hash(id),
+        const DeepCollectionEquality().hash(name),
+        const DeepCollectionEquality().hash(year),
+        const DeepCollectionEquality().hash(director),
+        const DeepCollectionEquality().hash(mainStar),
+        const DeepCollectionEquality().hash(description),
+        const DeepCollectionEquality().hash(favoritedByUsers),
+        const DeepCollectionEquality().hash(_genres),
+        const DeepCollectionEquality().hash(thumbnail),
+      );
 
   @JsonKey(ignore: true)
   @override
@@ -611,16 +622,17 @@ class _$_Movies implements _Movies {
 }
 
 abstract class _Movies implements Movies {
-  factory _Movies(
-      {final int? id,
-      final String? name,
-      final String? year,
-      final String? director,
-      final String? mainStar,
-      final String? description,
-      final int? favoritedByUsers,
-      final List<String>? genres,
-      final String? thumbnail}) = _$_Movies;
+  factory _Movies({
+    final int? id,
+    final String? name,
+    final String? year,
+    final String? director,
+    final String? mainStar,
+    final String? description,
+    final int? favoritedByUsers,
+    final List<String>? genres,
+    final String? thumbnail,
+  }) = _$_Movies;
 
   factory _Movies.fromJson(Map<String, dynamic> json) = _$_Movies.fromJson;
 

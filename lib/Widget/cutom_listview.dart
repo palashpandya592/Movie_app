@@ -6,9 +6,7 @@ import 'package:movies_app/routes/routes.dart';
 import '../model/datamode_list.dart';
 
 class CustomMovieList extends StatelessWidget {
-  const CustomMovieList({Key? key, required this.movies})
-      : assert(movies != null),
-        super(key: key);
+  const CustomMovieList({Key? key, required this.movies}) : super(key: key);
 
   final Movies movies;
 
@@ -33,7 +31,7 @@ class CustomMovieList extends StatelessWidget {
               aspectRatio: 0.8,
               child: Image.network(
                 '${movies.thumbnail}',
-                fit: BoxFit.fill,
+                fit: BoxFit.cover,
                 // color: ColorConstants.primaryGreyColor,
               ),
             ),

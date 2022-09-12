@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'datamode_list.dart';
+part of '../../model/datamode_list.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
@@ -38,7 +38,7 @@ _$_Movies _$$_MoviesFromJson(Map<String, dynamic> json) => _$_Movies(
       name: json['name'] as String?,
       year: json['year'] as String?,
       director: json['director'] as String?,
-      mainStar: json['main_star'] as String?,
+      mainStar: json['mainStar'] as String?,
       description: json['description'] as String?,
       favoritedByUsers: json['favoritedByUsers'] as int?,
       genres:

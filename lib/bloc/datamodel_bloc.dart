@@ -3,6 +3,7 @@ import 'package:meta/meta.dart';
 
 import '../model/datamode_list.dart';
 import '../utils/movie_repo.dart';
+import '../view/movielist_page.dart';
 
 part 'datamodel_event.dart';
 part 'datamodel_state.dart';
